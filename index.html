@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City Of Faith</title>
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- In your index.html -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body class="text-white">
+    <header
+      id="hero"
+      class="bg-[url('./images-bg/bg-6.jpg')] w-full bg-no-repeat bg-cover flex flex-col justify-center items-center bg-center h-screen transition-all duration-1000 ease-in-out"
+    >
+      <div
+        id="stickyScroll"
+        class="flex w-full justify-around items-center fixed top-0 z-50"
+      >
+        <!--church logo and text div-->
+        <div
+          class="flex justify-center items-center lg:px-10 py-5 w-[300px] md:w-[250px] lg:w-[650px] group"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
+          <!--Logo div-->
+          <div class="">
+            <img
+              src="./images/orgLogo.png"
+              alt=""
+              class="rounded-full w-[100px] h-[90px]"
+            />
+          </div>
+          <!--tetx for logo-->
+          <div>
+            <h3 class="font-light text-2xl leading-5.5">
+              RCCG <br />
+              <span class="w font-bold md:text-[25px] text-[20px]"
+                >The City of Faith
+              </span>
+            </h3>
+          </div>
+        </div>
+
+        <!--Menu div-->
+        <div class="flex items-start">
+          <div class="menu sticky top-0">
+            <nav>
+              <ul class="flex gap-5">
+                <li class="border-b-1">
+                  <a href="index.html">Home</a>
+                </li>
+                <span>•</span>
+                <li>
+                  <a href="about.html">About</a>
+                </li>
+                <span>•</span>
+                <li>
+                  <a href="pastorate.html">Pastorate</a>
+                </li>
+                <span>•</span>
+                <li>
+                  <a href="service-unit.html">Service Unit</a>
+                </li>
+                <span>•</span>
+                <li>
+                  <a href="blog.html">Blog</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="lg:hidden md:flex sm:flex sm:ml-50">
+            <button id="clickToShowMenu" class="cursor-pointer">
+              <i class="fa-solid fa-bars cursor-pointer"></i>
+            </button>
+          </div>
+        </div>
+
+        <!--show until click-->
+        <div
+          data-aos="slide-right"
+          id="showlistOnSmallScreen"
+          class="px-4 py-4 bg-slate-700 overflow-hidden absolute top-0 right-0 left-0 md:top-0 md:right-0 lg:hidden hidden"
+        >
+          <div
+            id="clickToHide"
+            class="cursor-pointer text-end font-bold px-4 py-2 w-full hover:bg-gray-800 transition-all duration-100 hover:translate-x-1"
+          >
+            X
+          </div>
+          <nav>
+            <ul class="flex flex-col gap-5">
+              <li class="listContent">
+                <a href="index.html" class="hover:border-0">Home</a>
+              </li>
+
+              <li class="listContent">
+                <a href="about.html" class="hover:border-0">About</a>
+              </li>
+
+              <li class="listContent">
+                <a href="pastorate.html" class="hover:border-0">Pastorate</a>
+              </li>
+
+              <li class="listContent">
+                <a href="service-unit.html" class="hover:border-0"
+                  >Service Unit</a
+                >
+              </li>
+
+              <li class="listContent">
+                <a href="blog.html" class="hover:border-0">Blog</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="overflow-hidden">
+        <div
+          id="bibleTextSlider"
+          class="text-5xl lg:text-6xl font-bold text-center flex flex-col justify-center items-center p-4 h-100"
+        >
+          <!-- <h3 class="text-[30px] lg:text-5xl lg:font-bold font-light">
+          WELCOME TO CHURCH
+        </h3>
+        <h1 class="text-5xl lg:text-6xl">
+          A CITY SET UPON THE HILLS CAN NOT BE HIDDEN.
+        </h1>-->
+        </div>
+      </div>
+    </header>
+
+    <main class="h-full w-full p-1">
+      <section
+        class="w-full h-full lg:h-[800px] p-4 flex flex-col justify-center items-center"
+      >
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 place-items-center p-5 gap-5 lg:grid-cols-4 h-full w-full"
+        >
+          <div
+            data-aos="fade-up"
+            class="bg-[url('./images/believe.jpg')] w-[300px] bg-center bg-cover p-10 h-100 space-y-10 flex flex-col justify-center rounded-4xl transition-all duration-300 ease-in hover:scale-101 shadow-black shadow-lg"
+          >
+            <h2 class="text-gray-500">What We Believe.</h2>
+            <p class="font-bold">
+              WE BELIEVE in one God, who exists in three Persons — the Father,
+              the Son and the Holy Spirit. He is good, loving, righteous, holy
+              and just.
+            </p>
+            <a
+              href="about.html"
+              class="text-[20px] w-[150px] text-start hover:border-2 px-4 py-2 rounded"
+              >More >>></a
+            >
+          </div>
+          <div
+            data-aos="fade-up"
+            class="bg-[url('./images/worship.jpg')] w-[300px] bg-center bg-cover p-10 h-100 space-y-10 flex flex-col justify-center rounded-4xl transition-all duration-300 ease-in hover:scale-101 shadow-black shadow-lg"
+          >
+            <h2 class="text-white">Worship with the Saint.</h2>
+            <p class="font-bold">
+              Worshipping God with the saints, unites our hearts in His
+              presence, lifting one voice in love, reverence, and truth to
+              glorify the One who is worthy.
+            </p>
+          </div>
+          <div
+            data-aos="fade-up"
+            class="bg-[url('./images/bible-study.avif')] w-[300px] bg-center bg-cover p-10 h-100 space-y-10 flex flex-col justify-center rounded-4xl transition-all duration-300 ease-in hover:scale-101 shadow-black shadow-lg"
+          >
+            <h2 class="text-white">Study with the Saint.</h2>
+            <p class="font-bold">
+              Studying the Bible with the saints deepens our faith, strengthens
+              fellowship, and reveals God's truth as we grow together in
+              understanding and obedience to His Word.
+            </p>
+          </div>
+          <div
+            data-aos="fade-up"
+            class="bg-[url('./images/prayer.avif')] w-[300px] bg-center bg-cover p-10 h-100 space-y-10 flex flex-col justify-center rounded-4xl transition-all duration-300 ease-in hover:scale-101 shadow-black shadow-lg"
+          >
+            <h2 class="text-white">Fervent Prayer.</h2>
+            <p class="font-bold">
+              Praying with the saints builds unity, ignites faith, and invites
+              God's power as we seek His will together in love, humility, and
+              agreement.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        data-aos="fade-in"
+        class="flex flex-col lg:flex-row justify-between items-center h-full w-full"
+      >
+        <div class="lg:w-[100%] w-full h-full">
+          <img
+            src="./images/get-involved.avif"
+            alt=""
+            class="lg:h-[600px] lg:w-full md:w-full"
+          />
+        </div>
+        <div
+          class="flex flex-col justify-center h-full lg:w-[100%] lg:h-[600px] lg:p-10 lg:space-y-10 space-y-4 p-4 bg-green-900"
+        >
+          <h2 class="text-green-500">Get Involved</h2>
+          <p class="text-green-500 w-fit">
+            Getting involved in the church is a powerful way to grow
+            spiritually, build meaningful relationships, and serve others with
+            your God-given gifts. Whether through joining a choir, serving in
+            the ushering team, helping with youth or children's ministry, or
+            simply volunteering behind the scenes, every role makes a difference
+            in the body of Christ. It's not just about filling a position—its
+            about being part of something greater than yourself. As you give
+            your time and heart to God's work, you'll find your faith
+            strengthened, your purpose clearer, and your walk with Christ more
+            fulfilling.
+          </p>
+
+          <a
+            href="service-unit.html"
+            class="w-fit text-black bg-green-500 px-5 py-3 rounded font-bold transition-all duration-300 hover:scale-103 hover:text-white"
+          >
+            Let's Connect
+          </a>
+        </div>
+      </section>
+
+      <section
+        data-aos="fade-in"
+        class="w-full h-full flex justify-evenly items-center flex-col md:flex-col lg:flex-row lg:w-full lg:h-[500px]"
+      >
+        <div class="w-[100%] h-100 bg-blue-900 flex flex-col justify-center">
+          <h3
+            data-aos="fade-up"
+            class="text-5xl font-mono w-full text-center text-blue-500"
+          >
+            Google Map
+          </h3>
+
+          <p data-aos="fade-up" class="text-blue-500 text-center">
+            <span>We are here for you @</span> <br />
+            1170 Corydon Avenue, Winnpeg, Manitoba.
+          </p>
+        </div>
+        <div
+          data-aos="fade-up"
+          class="h-100 w-[100%] flex justify-evenly items-center bg-amber-300"
+        >
+          <p class="h-full w-full lg:w-full lg:h-full text-center">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2571.854445168955!2d-97.17237482498363!3d49.86397876889439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea746c6f9ac627%3A0xf94d9eab721908a7!2s1170%20Corydon%20Ave%2C%20Winnipeg%2C%20MB%20R3M%200Z1%2C%20Canada!5e0!3m2!1sen!2sng!4v1748099212283!5m2!1sen!2sng"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="w-full h-full lg:w-full lg:h-full"
+            ></iframe>
+          </p>
+        </div>
+      </section>
+
+      <section data-aos="fade-in" class="h-full w-full flex">
+        <div
+          class="flex justify-evenly items-center flex-col lg:w-100% lg:flex-row w-full h-full"
+        >
+          <div
+            class="flex flex-col justify-center items-center w-[100%] h-100 bg-no-repeat bg-cover bg-center bg-[url('./images/prayer-request.avif')]"
+          >
+            <p class="p-4 text-3xl font-bold text-center">
+              "The fervent prayer of a righteous person availeth much." <br />
+              (James 5:16, KJV)
+            </p>
+          </div>
+          <div class="bg-lime-800 w-full h-full p-3 lg:h-[400px] lg:w-full">
+            <form
+              action="https://formsubmit.co/rccgthecityoffaith@gmai.com"
+              method="POST"
+              class="flex flex-col h-full w-full"
+            >
+              <div class="w-full flex flex-col justify-center items-center">
+                <img
+                  src="./images/orgLogo.png"
+                  alt=""
+                  class="rounded-full w-[70px] h-[50px] object-contain"
+                />
+                <h3>Prayer Request</h3>
+              </div>
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                name="name"
+                placeholder="Enter Your Name"
+                class="border-1 p-1"
+              />
+
+              <label for="email">Email:</label>
+              <input
+                type="text"
+                name="email"
+                placeholder="Enter Your Email"
+                class="border-1 p-1"
+              />
+
+              <label for="moblie">Moblie:</label>
+              <input
+                type="text"
+                name="moblie"
+                placeholder="Enter Your Moblie"
+                class="border-1 p-1"
+              />
+
+              <label for="prayer">Prayer Request:</label>
+              <textarea
+                name="prayer"
+                id=""
+                cols="30"
+                rows="5"
+                placeholder="Enter Your Prayer"
+                class="border-1 p-2"
+              ></textarea>
+
+              <button
+                type="submit"
+                class="p-2 bg-black mt-2 text-white rounded shadow-2xl w-45 hover:bg-gray-700 hover:scale-105 transition-all duration-100"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section data-aos="fade-in" class="h-full w-full flex">
+        <div
+          class="flex justify-evenly items-center flex-col-reverse lg:flex-row w-full h-full"
+        >
+          <div class="bg-lime-800 w-full h-full p-3 lg:h-[400px] lg:w-full">
+            <form
+              action="https://formsubmit.co/rccgthecityoffaith@gmai.com"
+              method="POST"
+              class="flex flex-col h-full w-full"
+            >
+              <div class="w-full flex flex-col justify-center items-center">
+                <img
+                  src="./images/orgLogo.png"
+                  alt=""
+                  class="rounded-full w-[70px] h-[50px] object-contain"
+                />
+
+                <h3>Testimony</h3>
+              </div>
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                name="name"
+                placeholder="Enter Your Name"
+                class="border-1 p-1"
+              />
+
+              <label for="email">Email:</label>
+              <input
+                type="text"
+                name="email"
+                placeholder="Enter Your Email"
+                class="border-1 p-1"
+              />
+
+              <label for="moblie">Moblie:</label>
+              <input
+                type="text"
+                name="moblie"
+                placeholder="Enter Your Moblie"
+                class="border-1 p-1"
+              />
+
+              <label for="prayer">Testimony:</label>
+              <textarea
+                name="prayer"
+                id=""
+                cols="30"
+                rows="5"
+                placeholder="Enter Your Prayer"
+                class="border-1 p-2"
+              ></textarea>
+
+              <button
+                type="submit"
+                class="p-2 bg-black mt-2 text-white rounded shadow-2xl w-45 hover:bg-gray-700 hover:scale-105 transition-all duration-100"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center w-full h-100 bg-no-repeat bg-cover bg-center bg-[url('./images/testify.avif')]"
+          >
+            <p class="p-4 text-3xl font-bold text-center">
+              "And they overcame him by the blood of the Lamb, and by the word
+              of their testimony; and they loved not their lives unto the
+              death."
+              <br />
+              (Revelation 12:11, KJV)
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="h-full w-full flex flex-col lg:flex-row">
+        <div class="w-full h-full">
+          <img src="./images/schedule.JPG" alt="" class="h-fit object-cover" />
+        </div>
+        <div
+          class="w-full h-100 bg-sky-900 lg:h-[494px] p-10 flex flex-col justify-center"
+        >
+          <h2 class="text-sky-400">
+            CHURCH <br />
+            SCHUDULE
+          </h2>
+
+          <p class="text-sky-400 text-2xl">Sundays: 9:30AM - 11:30AM</p>
+          <p class="text-sky-400 text-2xl">Wednesdays: 6:00PM (Bible Study)</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white p-8">
+      <div data-aos="fade-up" class="w-full grid md:grid-cols-3 gap-8">
+        <!-- Church Info -->
+        <div>
+          <h2 class="text-xl font-bold mb-4">The City Of Faith Church</h2>
+          <p>1170 Corydon Avenue, Winnpeg, Manitoba.</p>
+          <p>Phone: 4313749044, 2049518309</p>
+          <p>Email: rccgthecityoffaith@gmail.com</p>
+        </div>
+
+        <!-- Service Times -->
+        <div>
+          <h2 class="text-xl font-bold mb-4">Service Times</h2>
+          <p>Sundays: 9:30 AM - 11:30 AM</p>
+          <p>Wednesdays: 6:00 PM (Bible Study)</p>
+        </div>
+
+        <!-- Follow Us -->
+        <div>
+          <h2 class="text-xl font-bold mb-4 text-center">Follow Us:</h2>
+          <div class="flex justify-evenly">
+            <a
+              href="https://www.facebook.com/rccgthecityoffaith/"
+              target="_blank"
+              class="p-3 rounded shadow-lg duration-300 hover:scale-110"
+              ><i
+                class="fa-brands fa-facebook text-4xl text-blue-500 animate-pulse"
+              ></i>
+            </a>
+            <a
+              href="https://www.instagram.com/rccgthecityoffaith/"
+              target="_blank"
+              class="p-3 rounded shadow-lg duration-300 hover:scale-110"
+              ><i
+                class="fa-brands fa-square-instagram text-4xl text-pink-500 animate-pulse"
+              ></i>
+            </a>
+            <a
+              href="https://www.tiktok.com/@rccgthecityoffaith?_t=ZM-8wcgSP3hNf3&_r=1"
+              target="_blank"
+              class="p-3 rounded shadow-lg duration-300 hover:scale-110"
+              ><i class="fa-brands text-4xl fa-tiktok animate-pulse"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 text-center text-gray-400 text-sm">
+        <p>© 2025 The City Of Faith Church. All rights reserved.</p>
+        <p>"FAITH is Our Culture, Victory is Our Life Style."</p>
+      </div>
+    </footer>
+
+    <script src="site.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: false,
+      });
+    </script>
+  </body>
+</html>

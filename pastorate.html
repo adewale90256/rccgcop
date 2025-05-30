@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- In your index.html -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body class="text-white">
+    <header
+      id="hero"
+      class="bg-[url('./images-bg/bg-6.jpg')] w-full bg-no-repeat bg-cover flex flex-col justify-center items-center bg-center h-screen transition-all duration-1000 ease-in-out"
+    >
+      <div
+        id="stickyScroll"
+        class="flex w-full justify-around items-center fixed top-0 z-50"
+      >
+        <!--church logo and text div-->
+        <div
+          class="flex justify-center items-center lg:px-10 py-5 w-[300px] md:w-[250px] lg:w-[650px] group"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
+          <!--Logo div-->
+          <div class="">
+            <img
+              src="./images/orgLogo.png"
+              alt=""
+              class="rounded-full w-[100px] h-[90px]"
+            />
+          </div>
+          <!--tetx for logo-->
+          <div>
+            <h3 class="font-light text-2xl leading-5.5">
+              RCCG <br />
+              <span class="w font-bold md:text-[25px] text-[20px]"
+                >The City of Faith <br />
+                <span class="text-[15px]"> Church.</span>
+              </span>
+            </h3>
+          </div>
+        </div>
+
+        <!--Menu div-->
+        <div class="flex items-start">
+          <div class="menu sticky top-0">
+            <nav class="">
+              <ul class="flex gap-5">
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <span>•</span>
+                <li>
+                  <a href="about.html">About</a>
+                </li>
+                <span>•</span>
+                <li class="border-b-1">
+                  <a href="pastorate.html">Pastorate</a>
+                </li>
+                <span>•</span>
+                <li>
+                  <a href="service-unit.html">Service Unit</a>
+                </li>
+                <span>•</span>
+                <li>
+                  <a href="blog.html">Blog</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="lg:hidden md:flex sm:flex sm:ml-50">
+            <button id="clickToShowMenu" class="cursor-pointer">
+              <i class="fa-solid fa-bars cursor-pointer"></i>
+            </button>
+          </div>
+        </div>
+
+        <!--show until click-->
+        <div
+          data-aos="slide-right"
+          id="showlistOnSmallScreen"
+          class="px-4 py-4 bg-slate-700 overflow-hidden absolute top-0 right-0 left-70 md:top-0 md:right-0 md:left-90 lg:hidden hidden"
+        >
+          <div
+            id="clickToHide"
+            class="cursor-pointer text-end font-bold px-4 py-2 w-full hover:bg-gray-800 transition-all duration-100 hover:translate-x-1"
+          >
+            X
+          </div>
+          <nav>
+            <ul class="flex flex-col gap-5">
+              <li class="listContent">
+                <a href="index.html" class="hover:border-0">Home</a>
+              </li>
+
+              <li class="listContent">
+                <a href="about.html" class="hover:border-0">About</a>
+              </li>
+
+              <li class="listContent">
+                <a href="pastorate.html" class="hover:border-0">Pastorate</a>
+              </li>
+
+              <li class="listContent">
+                <a href="service-unit.html" class="hover:border-0"
+                  >Service Unit</a
+                >
+              </li>
+
+              <li class="listContent">
+                <a href="blog.html" class="hover:border-0">Blog</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="overflow-hidden">
+        <div
+          id="bibleTextSlider"
+          class="text-5xl lg:text-6xl text-center flex flex-col justify-center items-center p-4 h-100"
+        >
+          <!-- <h3 class="text-[30px] lg:text-5xl lg:font-bold font-light">
+          WELCOME TO CHURCH
+        </h3>
+        <h1 class="text-5xl lg:text-6xl">
+          A CITY SET UPON THE HILLS CAN NOT BE HIDDEN.
+        </h1>-->
+        </div>
+      </div>
+    </header>
+
+    <main class="h-full w-full bg-slate-700">
+      <section class="w-full">
+        <div class="w-full">
+          <div
+            class="w-full p-5 flex justify-evenly items-center flex-col gap-5 lg:flex-row"
+          >
+            <p data-aos="fade-up" class="lg:w-[700px]">
+              For over 2 decade, Kenneth Olawale has been a voice in proclaiming
+              the gospel of Our Lord Jesus Christ. His passion and message is
+              focused on Faith and Family. He is passionate about living a life
+              of faith that guarantees victory in Christ. He is also passionate
+              about relationships especially family relationship. This he has
+              been doing through his resources such as books, media,
+              publications and events. He is married to Omolola Ona-Adigun and
+              are blessed with two adorable daughters.
+            </p>
+            <img
+              data-aos="fade-up"
+              src="./images/pastor-and-wife.jpg"
+              alt=""
+              class="lg:w-[500px] lg:h-[500px] object-cover"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white p-8">
+      <div data-aos="fade-up" class="w-full grid md:grid-cols-3 gap-8">
+        <!-- Church Info -->
+        <div>
+          <h2 class="text-xl font-bold mb-4">The City Of Faith Church</h2>
+          <p>1170 Corydon Avenue, Winnpeg, Manitoba.</p>
+          <p>Phone:</p>
+          <p>Email: rccgthecityoffaith@gmail.com</p>
+        </div>
+
+        <!-- Service Times -->
+        <div>
+          <h2 class="text-xl font-bold mb-4">Service Times</h2>
+          <p>Sundays: 9:30 AM - 11:30 AM</p>
+          <p>Wednesdays: 6:00 PM (Bible Study)</p>
+        </div>
+
+        <!-- Follow Us -->
+        <div>
+          <h2 class="text-xl font-bold mb-4 text-center">Follow Us:</h2>
+          <div class="flex justify-evenly">
+            <a
+              href="https://www.facebook.com/rccgthecityoffaith/"
+              target="_blank"
+              class="hover:bg-blue-500 p-3 rounded shadow-lg duration-300 hover:scale-110"
+              ><i class="fa-brands fa-facebook text-blue-500 animate-pulse"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/rccgthecityoffaith/"
+              target="_blank"
+              class="hover:bg-blue-500 p-3 rounded shadow-lg duration-300 hover:scale-110"
+              ><i
+                class="fa-brands fa-square-instagram text-pink-500 animate-pulse"
+              ></i>
+            </a>
+            <a
+              href="https://www.tiktok.com/@rccgthecityoffaith?_t=ZM-8wcgSP3hNf3&_r=1"
+              target="_blank"
+              class="p-3 rounded shadow-lg duration-300 hover:scale-110"
+              ><i class="fa-brands fa-tiktok animate-pulse"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 text-center text-gray-400 text-sm">
+        <p>© 2025 The City Of Faith Church. All rights reserved.</p>
+        <p>"FAITH is Our Culture, Victory is Our Life Style."</p>
+      </div>
+    </footer>
+
+    <script src="site.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: false,
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Invovled</title>
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- In your index.html -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body class="text-white">
+    <header
+      id="hero"
+      class="bg-[url('./images-bg/bg-6.jpg')] w-full bg-no-repeat bg-cover flex flex-col justify-center items-center bg-center h-screen transition-all duration-1000 ease-in-out"
+    >
+      <div
+        id="stickyScroll"
+        class="flex w-full justify-around items-center fixed top-0 z-50"
+      >
+        <!--church logo and text div-->
+        <div
+          class="flex justify-center items-center lg:px-10 py-5 w-[300px] md:w-[250px] lg:w-[650px] group"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
+          <!--Logo div-->
+          <div class="">
+            <img
+              src="./images/orgLogo.png"
+              alt=""
+              class="rounded-full w-[100px] h-[90px]"
+            />
+          </div>
+          <!--tetx for logo-->
+          <div>
+            <h3 class="font-light text-2xl leading-5.5">
+              RCCG <br />
+              <span class="w font-bold md:text-[25px] text-[20px]"
+                >The City of Faith <br />
+                <span class="text-[15px]"> Church.</span>
+              </span>
+            </h3>
+          </div>
+        </div>
+
+        <!--Menu div-->
+        <div class="flex items-start">
+          <div class="menu sticky top-0">
+            <nav>
+              <ul class="flex gap-5">
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <span>•</span>
+                <li>
+                  <a href="about.html">About</a>
+                </li>
+                <span>•</span>
+                <li>
+                  <a href="pastorate.html">Pastorate</a>
+                </li>
+                <span>•</span>
+                <li class="border-b-1">
+                  <a href="service-unit.html">Service Unit</a>
+                </li>
+                <span>•</span>
+                <li>
+                  <a href="blog.html">Blog</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="lg:hidden md:flex sm:flex sm:ml-50">
+            <button id="clickToShowMenu" class="cursor-pointer">
+              <i class="fa-solid fa-bars cursor-pointer"></i>
+            </button>
+          </div>
+        </div>
+
+        <!--show until click-->
+        <div
+          data-aos="slide-right"
+          id="showlistOnSmallScreen"
+          class="px-4 py-4 bg-slate-700 overflow-hidden absolute top-0 right-0 left-70 md:top-0 md:right-0 md:left-90 lg:hidden hidden"
+        >
+          <div
+            id="clickToHide"
+            class="cursor-pointer text-end font-bold px-4 py-2 w-full hover:bg-gray-800 transition-all duration-100 hover:translate-x-1"
+          >
+            X
+          </div>
+          <nav>
+            <ul class="flex flex-col gap-5">
+              <li class="listContent">
+                <a href="index.html" class="hover:border-0">Home</a>
+              </li>
+              <li class="listContent">
+                <a href="about.html" class="hover:border-0">About</a>
+              </li>
+
+              <li class="listContent">
+                <a href="pastorate.html" class="hover:border-0">Pastorate</a>
+              </li>
+
+              <li class="listContent">
+                <a href="service-unit.html" class="hover:border-0"
+                  >Service Unit</a
+                >
+              </li>
+
+              <li class="listContent">
+                <a href="blog.html" class="hover:border-0">Blog</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="overflow-hidden">
+        <div
+          id="bibleTextSlider"
+          class="text-5xl lg:text-6xl text-center flex flex-col justify-center items-center p-4 h-100"
+        >
+          <!-- <h3 class="text-[30px] lg:text-5xl lg:font-bold font-light">
+          WELCOME TO CHURCH
+        </h3>
+        <h1 class="text-5xl lg:text-6xl">
+          A CITY SET UPON THE HILLS CAN NOT BE HIDDEN.
+        </h1>-->
+        </div>
+      </div>
+    </header>
+
+    <main class="h-full">
+      <section data-aos="fade-up" class="bg-slate-700 h-full">
+        <div class="p-4">
+          <h2 class="font-mono">Get Invovlved</h2>
+        </div>
+        <div
+          class="p-5 grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1 lg:auto-rows-min gap-5"
+        >
+          <details
+            class="group rounded-lg overflow-hidden transition-all duration-[2000ms] max-h-20 open:max-h-96 shadow-lg shadow-black hover:scale-103 px-2"
+          >
+            <summary class="cursor-pointer font-mono p-4 border-b-1 rounded">
+              MUSIC
+            </summary>
+
+            <div class="p-4">
+              <p>
+                Serving in the choir unit of a church is more than singing — it
+                is a sacred calling and a powerful form of ministry. When you
+                join the choir, you become part of a spiritual team tasked with
+                leading God's people into His presence through worship. It's not
+                just about having a beautiful voice; it's about offering your
+                gift to honor the One who gave it.
+              </p>
+            </div>
+          </details>
+
+          <details
+            class="group rounded-lg overflow-hidden transition-all duration-[2000ms] max-h-20 open:max-h-96 shadow-lg shadow-black hover:scale-103"
+          >
+            <summary class="cursor-pointer font-mono p-4 border-b-1 rounded">
+              PROTOCOL
+            </summary>
+
+            <div class="p-4">
+              <p>
+                Serving as a protocol officer in church is a unique and
+                honorable ministry. It's more than just welcoming guests or
+                arranging seats — it's a form of worship through excellence,
+                order, and hospitality. Protocol officers are often the first
+                point of contact for visitors and ministers, and their role sets
+                the tone for the entire service.
+              </p>
+            </div>
+          </details>
+
+          <details
+            class="group rounded-lg overflow-hidden transition-all duration-[2000ms] max-h-20 open:max-h-96 shadow-lg shadow-black hover:scale-103"
+          >
+            <summary class="cursor-pointer font-mono p-4 border-b-1 rounded">
+              SANCTUARY
+            </summary>
+
+            <div class="p-4">
+              <p>
+                Being a sanctuary keeper in church is a powerful and often
+                overlooked ministry. It is not just about cleaning or arranging
+                chairs — it is about honoring God by maintaining the holiness
+                and orderliness of His house. Just as priests in the Old
+                Testament kept the temple in perfect condition, today's
+                sanctuary keepers serve with the same reverence and dedication.
+              </p>
+            </div>
+          </details>
+
+          <details
+            class="group rounded-lg overflow-hidden transition-all duration-[2000ms] max-h-20 open:max-h-96 shadow-lg shadow-black hover:scale-103"
+          >
+            <summary class="cursor-pointer font-mono p-4 border-b-1 rounded">
+              USHERING
+            </summary>
+
+            <div class="p-4">
+              <p>
+                An usher is called to serve with a smile, humility, and
+                attentiveness. Whether it's greeting members, helping first-time
+                visitors, maintaining order during services, or supporting the
+                flow of the program, ushers are essential to ensuring that
+                everything runs smoothly. They are silent ministers who work
+                behind the scenes, but their impact is felt by all.
+              </p>
+            </div>
+          </details>
+
+          <details
+            class="group rounded-lg overflow-hidden transition-all duration-[2000ms] max-h-20 open:max-h-96 shadow-lg shadow-black hover:scale-103"
+          >
+            <summary class="cursor-pointer font-mono p-4 border-b-1 rounded">
+              EVANGELISM
+            </summary>
+
+            <div class="p-4">
+              <p>
+                Evangelism is not just about preaching on the streets; it's
+                about carrying the light of Christ into every place we go.
+                Whether it's through one-on-one conversations, outreach
+                programs, community visits, or sharing tracts, evangelism team
+                members are ambassadors of Christ (2 Corinthians 5:20). They
+                represent His love, hope, and saving grace to a world in need.
+              </p>
+            </div>
+          </details>
+
+          <details
+            class="group rounded-lg overflow-hidden transition-all duration-[2000ms] max-h-20 open:max-h-96 shadow-lg shadow-black hover:scale-103"
+          >
+            <summary class="cursor-pointer font-mono p-4 border-b-1 rounded">
+              MEDIA
+            </summary>
+
+            <div class="p-4">
+              <p>
+                Serving in the media department is a unique and powerful way to
+                contribute to the work of God in today's digital age. While it
+                may often go unseen by the congregation, the media team plays a
+                vital role in enhancing the worship experience and spreading the
+                gospel beyond the church walls.
+              </p>
+            </div>
+          </details>
+
+          <details
+            class="group rounded-lg overflow-hidden transition-all duration-[2000ms] max-h-20 open:max-h-96 shadow-lg shadow-black hover:scale-103"
+          >
+            <summary class="cursor-pointer font-mono p-4 border-b-1 rounded">
+              PRAYER
+            </summary>
+
+            <div class="p-4">
+              <p>
+                Prayer is not just a routine; it is communication with God — the
+                foundation of every true move of God. The prayer department
+                carries the weighty responsibility of interceding for the
+                church, the leaders, the members, the community, and the
+                nations. It is a ministry of standing in the gap (Ezekiel
+                22:30), warring in the spirit, and creating spiritual atmosphere
+                for revival, healing, breakthrough, and direct
+              </p>
+            </div>
+          </details>
+
+          <details
+            class="group rounded-lg overflow-hidden transition-all duration-[2000ms] max-h-20 open:max-h-96 shadow-lg shadow-black hover:scale-103"
+          >
+            <summary class="cursor-pointer font-mono p-4 border-b-1 rounded">
+              YOUTH FELLOWSHIP
+            </summary>
+
+            <div class="p-4">
+              <p>
+                Youth fellowship in church is more than just a gathering — it is
+                a movement of purpose, passion, and spiritual growth. It
+                provides a space where young people can connect, learn, and grow
+                in their relationship with God while discovering their unique
+                identity and calling. In a world full of distractions and
+                pressures, youth fellowship helps to build a solid spiritual
+                foundation. Youth fellowship also develops leadership, service,
+                and responsibility.The energy, creativity, and zeal of the youth
+                are powerful tools in God's hands.
+              </p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section class="h-full p-5 bg-indigo-600">
+        <div
+          class="flex flex-col items-center justify-evenly lg:flex-row md:flex-row gap-3"
+        >
+          <div data-aos="fade-up">
+            <h3 class="text-4xl">
+              Would you Love to join <br />
+              our service team.
+            </h3>
+          </div>
+          <div
+            data-aos="fade-up"
+            class="flex justify-center items-center h-full"
+          >
+            <!--Logo div-->
+
+            <form
+              action="https://formsubmit.co/rccgthecityoffaith@gmai.com"
+              method="POST"
+              enctype="text/plain"
+              class="flex flex-col justify-center h-fit bg-blue-700 p-5 w-[400px] lg:w-[500px] gap-2 shadow-lg shadow-black rounded"
+            >
+              <div class="w-full flex justify-center items-center">
+                <img
+                  src="./images/orgLogo.png"
+                  alt=""
+                  class="rounded-full w-[100px] h-[90px]"
+                />
+              </div>
+              <label for="name">Full-Name:</label>
+              <input
+                type="text"
+                name="name"
+                class="border-1 border-gray-300 p-2 rounded"
+                required
+              />
+
+              <label for="gender">Gender:</label>
+              <input
+                type="text"
+                name="gender"
+                class="border-1 border-gray-300 p-2 rounded"
+                required
+              />
+
+              <label for="moblie">Moblie:</label>
+              <input
+                type="text"
+                name="moblie"
+                class="border-1 border-gray-300 p-2 rounded"
+                required
+              />
+
+              <label for="department">Department:</label>
+              <input
+                type="text"
+                name="department"
+                class="border-1 border-gray-300 p-2 rounded"
+                required
+              />
+
+              <button
+                type="submit"
+                class="py-2 px-4 bg-indigo-500 hover:bg-indigo-700 cursor-pointer rounded font-bold"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white p-8">
+      <div data-aos="fade-up" class="w-full grid md:grid-cols-3 gap-8">
+        <!-- Church Info -->
+        <div>
+          <h2 class="text-xl font-bold mb-4">The City Of Faith Church</h2>
+          <p>1170 Corydon Avenue, Winnpeg, Manitoba.</p>
+          <p>Phone:</p>
+          <p>Email: rccgthecityoffaith@gmail.com</p>
+        </div>
+
+        <!-- Service Times -->
+        <div>
+          <h2 class="text-xl font-bold mb-4">Service Times</h2>
+          <p>Sundays: 9:30 AM - 11:30 AM</p>
+          <p>Wednesdays: 6:00 PM (Bible Study)</p>
+        </div>
+
+        <!-- Follow Us -->
+        <div>
+          <h2 class="text-xl font-bold mb-4 text-center">Follow Us:</h2>
+          <div class="flex justify-evenly">
+            <a
+              href="https://www.facebook.com/rccgthecityoffaith/"
+              target="_blank"
+              class="hover:bg-blue-500 p-3 rounded shadow-lg duration-300 hover:scale-110"
+              ><i class="fa-brands fa-facebook text-blue-500 animate-pulse"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/rccgthecityoffaith/"
+              target="_blank"
+              class="hover:bg-blue-500 p-3 rounded shadow-lg duration-300 hover:scale-110"
+              ><i
+                class="fa-brands fa-square-instagram text-pink-500 animate-pulse"
+              ></i>
+            </a>
+            <a
+              href="https://www.tiktok.com/@rccgthecityoffaith?_t=ZM-8wcgSP3hNf3&_r=1"
+              target="_blank"
+              class="p-3 rounded shadow-lg duration-300 hover:scale-110"
+              ><i class="fa-brands fa-tiktok animate-pulse"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 text-center text-gray-400 text-sm">
+        <p>© 2025 The City Of Faith Church. All rights reserved.</p>
+        <p>"FAITH is Our Culture, Victory is Our Life Style."</p>
+      </div>
+    </footer>
+
+    <script src="site.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: false,
+      });
+    </script>
+  </body>
+</html>
