@@ -83,11 +83,8 @@ window.addEventListener("scroll", () => {
 
 const hero = document.getElementById("hero");
 const images = [
-  "./images-bg/bg-1.jpg",
-  "./images-bg/bg-2.jpg",
   "./images-bg/bg-3.jpg",
   "./images-bg/bg-4.webp",
-  "./images-bg/bg-6.jpg",
   "./images-bg/bg-11.jpg",
   "./images-bg/bg-12.jpg",
   "./images-bg/bg-14.jpg",
