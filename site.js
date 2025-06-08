@@ -18,7 +18,7 @@ HideBtn.addEventListener("click", () => {
 let currentBibleText = 0;
 const bibleTextSlider = document.getElementById("bibleTextSlider");
 const text = [
-  "WELCOME TO CHURCH",
+  "Welcome to the City of Faith, the city of possibilities. At the city of faith, faith is our culture, and victory is our lifestyle. ",
   "When I am afraid, I put my trust in you. (Psalm 56:3)",
   "I can do all things through Christ who strengthens me.(Philippians 4:13)",
   "God is our refuge and strength, a very present help in trouble.(Psalm 46:1)",
